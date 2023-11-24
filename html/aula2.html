@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aula 2</title>
+</head>
+
+<body>
+  <form action="#" onsubmit="alert('Enviei um formulário')" autocomplete="off" target="_self" name="signup" method="post">
+    <label for="">Nome:</label> <input type="text" name="name"><br>
+    <label for="">Idade:</label> <input type="number" name="age" min="0" max="99" step="3"><br>
+    <label for="">Cargo: </label>
+    <select name="role" id="">
+      <option selected value="">Selecione Cargo</option>
+      <option value="Gerente">Gerente</option>
+      <option value="Diretor">Diretor</option>
+      <option value="Presidente">Presidente</option>
+      <option value="FrontEnd">Front-End</option>
+    </select> <br>
+    <label for="">Senha: </label> <input type="password" name="password"><br>
+    <label for="">Range: </label> <input type="range" min="0" max="100"><br>
+    <label for="">Color: </label> <input type="color"> <br>
+    <label for="">Email: </label> <input type="email"> <br>
+    <label for="">Url: </label> <input type="url"><br>
+    <label for="">Date: </label> <input type="date"> <br>
+    <label for="">CheckBox: </label> <input type="checkbox"> <input type="checkbox"><br>
+    <label for="">Radio: </label> <input type="radio"> <input type="radio"><br>
+    <label for="">Hidden</label> <input type="hidden"><br>
+    <label for="">File</label> <input type="file" multiple> <br>
+    <label for="">TextArea</label> <textarea name="" id="" cols="10" rows="1"></textarea><br>
+    <label for="">Search</label> <input type="search"> <!--Não pega no firefox-->
+    <button type="submit">Enviar</button><br>
+
+  </form>
+  <hr>
+  <h2>Diferença checkbox e radio</h2>
+  <hr>
+  <form action="#" autocomplete="off" onsubmit="alert('Pedido enviado!')" method="post" name="signup1" target="_self">
+    <h4>Você selecionou a pizza de calabrasa</h4>
+    <p>Quais opcionais você deseja?</p>
+    <input type="checkbox" disabled name="opcional[]" value="queijo"> <label for="">+ queijo</label><br>
+    <input type="checkbox" name="opcional[]" value="calabresa"> <label for="">+ calabresa</label><br>
+    <input type="checkbox" name="opcional[]" value="cebola"> <label for="">+ cebola</label><br>
+    <input type="checkbox" name="opcional[]" value="azeitona"> <label for="">+ azeitona</label><br>
+
+    <p>Borda recheada? </p>
+    <input type="radio" name="borda" value="Sim"> <label for="">Sim</label><br>
+    <input type="radio" name="borda" value="Não"> <label for="">Não</label><br>
+    <p>bebida</p>
+    <input type="radio" name="drink" value="suco"><label for="">Suco</label><br>
+    <input type="radio" name="drink" value="refrigerante"><label for="">Refrigerante</label><br>
+    <input type="radio" name="drink" value="agua"><label for="">Agua</label><br>
+    <input type="radio" name="drink" value="nenhum"><label for="">Nenhum</label><br>
+    <button type="submit">Eviar Pedido</button>
+  </form>
+
+</body>
+
+</html>

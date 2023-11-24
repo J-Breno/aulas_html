@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recursos especiais</title>
+  <style>
+    kbd {
+      border: 1px solid #000;
+      border-radius: 5px;
+    }
+
+    code {
+      color: red;
+    }
+
+    pre {
+      background-color: #f1f1f1;
+    }
+  </style>
+</head>
+
+<body>
+  <p>Para copiar esta informação, pressione <kbd>CRTL</kbd> + <kbd>C</kbd></p>
+  <p>Para trocar o fundo de um elemento, utilize o elemento <code>background-color</code> </p>
+  <p>Comando completo de alterar a cor de fundo:</p>
+
+  <pre>
+    <code>
+
+      code {
+        background-color: #f1f1f1;
+        color: red;
+      }
+    </code>
+    </pre>
+  <meter></meter>
+  <progress id="progress" max="100" min="0"></progress>
+  <hr>
+  <input type="text" id="busca"><br>
+  <p id="descricao">
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur aperiam voluptatem, officiis, maiores perferendis debitis voluptate pariatur quis nihil soluta rerum veniam. Consequuntur recusandae magnam porro maxime numquam at asperiores?
+  </p>
+  <!-- O required vai fazer que certo cmapo seja obrigatório -->
+
+  <script>
+    var progress = document.getElementById('progress');
+    const interval = setInterval(() => {
+      progress.value += 10;
+
+      if (progress.value >= 100) {
+        alert("Carregamento carregado com sucesso");
+        clearInterval(interval);
+      }
+    }, 1000);
+    // progress.value = 80;
+
+    var searchField = document.getElementById("busca");
+    var descriptionObject = document.getElementById("descricao");
+    var textToSearch = descriptionObject.innerHTML;
+
+    function realizaBusca(busca) {
+      const regex = new RegExp(`(${busca})(?!(.(?!<mark))*</mark>+`, 'ig');
+      const ocurrences = textToSearch.match(regex);
+      descricaoObj.innerHTML = textToSearch.replace(regex, `<mark>${busca}</mark>`);
+    }
+
+    searchField.addEventListener('keyup', (e) => realizaBusca(e.target.value));
+  </script>
+
+  <!-- estude canvas depois -->
+</body>
+
+</html>

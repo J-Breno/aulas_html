@@ -1,0 +1,97 @@
+html
+
+Entendendo comunicação client x server
+
+	História dos computadores
+
+1a gereação
+Harvard mark 1 (1944)
+Colossus (1946)
+ENIAC (1946)
+
+Calculos e coisas relacionadas a guerrar criptografia, eram com valvulas
+
+2a geração (1959 a 1965)
+
+Começo dos transistores 
+
+3a geção (1965 a 1970)
+
+começo dos chips
+
+4a geração a partir de 1975 até hoje
+
+5a geração (IA,bitcoin,computadores quânticos)
+
+
+* Nomes importantes
+
+° Grace Murray Hopper, ela teve o termo 'bug' para computação mack 1
+
+° Robert E. Kahn - criou o TCP/IP, e apresentou o primeirou email
+
+° Tim Berners-Lee - chamado de Pai da internet, inventou o wwww, World Wide Comsortion (W3C), popularizou o http e html
+
+
+	CLIENTS
+
+client é que você consome informação de algum lugar, o client é o dispositivel que está consumindo a informação da internet
+servidor server informações para o cliente
+
+O servidor me retornar html, css, javascript etc... São arquivos estáticos
+
+O navegar ele gera um casting, ele pega esses arquivos e armazena no computador do client
+
+refresh é o atualizar a página, ele apaga essas informações e vai buscar de novo
+
+* Navegadores
+
+São programas criados por empresas,utilizados para abrir/executar esses arquivos
+
+Seguem o padrão do W3C, são gratuitos e são chamados de Browsers
+
+* aplicações web
+
+Aplicações web são soluções criadas que possuem internet como meio de comunicação entre client x Server não sendo necessário a sua instalação. O youtube que é instalado smartphone não é um 
+aplicativo web, é apenas um aplicativo
+
+
+	Servers
+
+* Servidores
+
+o servidor recebe e manda informação
+Os lugares que são um conjunto de servidores é chamada e data centers
+
+Quando o client faz uma pergunta vai uma request htpp para o servidor
+
+* Tipos de servidores
+
+servidor proxy - para manter a segurança, ele confere se é seguro
+
+seridor firewall - se uma pessoa maliciosa tenta enviar algum malware o firewall barra isso
+
+servidor DNS = domain name server - cada servidor tem um ip, o dns serve para traduzir o www.site.com para saber o que é aquilo
+
+* Hospedagem de site
+
+Colocar os seus arquivos em um serivdor na internet
+
+
+FTP - file transfer protocol = é uma conecção que você faz com o servidor, para enviar e receber arquivos (Filezilla)
+
+	Linguagem de programação
+
+* O que é
+
+é uma linguagem escrita e formal que especifica um conjunto de instruções e regras usadas para gerar programas (software)
+
+* Server-side
+roda do lado do servidor - php, java, C#, python, JavaScript, Ruby
+
+* client-side
+roda do lado do client - JavaScript
+--------------------------------------------------------------------------------
+html semântico é um html que faz sentido
+O HTML que eu vejo no inspesionar elemento no Browsers é o DOM
+quando eu vou manipular o DOM com JavaScript, eu vou manipular o códgio html que eu fiz
